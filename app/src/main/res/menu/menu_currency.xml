@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.essam.currencyconverter.ui.MainFragment">
+    <item
+        android:id="@+id/search_icon"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="2"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/refresh_icon"
+        android:title="@string/action_refresh"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+
+        />
+    <item
+        android:id="@+id/sortbyMaxSell"
+        android:title="ترتيب لاعلي سعر بيع"
+        android:orderInCategory="3"
+        app:showAsAction="never"/>
+    <item android:id="@+id/sortbuMinSell"
+        android:title="ترتيب لاقل سعر بيع"
+        android:orderInCategory="4"
+        app:showAsAction="never"/>
+    <item android:id="@+id/sotrbyMinBuy"
+        android:title="ترتيب لاقل سعر شراء"
+        android:orderInCategory="5"
+        app:showAsAction="never"/>
+    <item android:id="@+id/sotrbyMaxBuy"
+        android:title="ترتيب لاعلي سعر شراء"
+        android:orderInCategory="5"
+        app:showAsAction="never"/>
+
+
+
+</menu>

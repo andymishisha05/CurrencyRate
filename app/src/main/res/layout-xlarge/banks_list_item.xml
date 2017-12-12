@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?selectableItemBackground"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:id="@+id/cardview"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+      
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/bank_logo_imageView1" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="3dp"
+            android:layout_height="60dp"
+            android:layout_alignRight="@+id/bank_logo_imageView1"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/bank_logo_imageView1"
+            android:layout_toRightOf="@+id/bank_logo_imageView1"
+            android:background="#7B6E68" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical"
+                android:layout_marginEnd="15dp"
+               android:id="@+id/qw"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/view"
+                android:layout_toEndOf="@+id/view">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="بنك الاهلي المركزي"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:id="@+id/banks_name_textView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="بنك الاهلي المركزي"
+                    android:id="@+id/banks_name_textViewar"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout"
+                android:layout_above="@+id/currlin"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp">
+                <TextView
+
+                    android:id="@+id/currSEll_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginStart="4dp"
+                    android:text="sell" />
+
+                <TextView
+                    android:id="@+id/currSEll_TextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:text="شراء" />
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currlin"
+                android:orientation="horizontal"
+                android:layout_alignBottom="@+id/qw"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/buyCurr_TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginStart="4dp"
+                    android:text="sell" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/buyCurr_TextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignRight="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:text="بيع" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

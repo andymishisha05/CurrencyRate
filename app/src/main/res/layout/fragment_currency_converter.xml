@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CurrencyConverterFragment"
+   >
+    <TextView
+        android:text="@string/convert_from_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/convert_from_text_view"
+      />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/from_spinner"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/convert_from_text_view"
+        android:layout_toEndOf="@+id/convert_from_text_view">
+    </Spinner>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/from_spinner"
+        android:id="@+id/linear_layout">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:hint="@string/enter_amount_hint"
+            android:inputType="numberDecimal"
+            android:id="@+id/convert_from_edit_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/conveter"
+            android:src="@drawable/exchange"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout"
+        android:layout_marginTop="15dp"
+        android:text="@string/convert_to_text_view"
+        android:id="@+id/convert_to_text_view" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_spinner"
+        android:layout_alignTop="@+id/convert_to_text_view"
+        android:layout_toRightOf="@+id/convert_to_text_view"
+        android:layout_toEndOf="@+id/convert_to_text_view"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to_spinner"
+        android:hint="@string/to_text_view"
+        android:id="@+id/result_text_view"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_text_view"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/updated_time_text_view"/>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id2">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
